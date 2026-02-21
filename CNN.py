@@ -30,7 +30,7 @@ class CNNModel(nn.Module):
         # Classifier
         self.flatten = nn.Flatten()
         # Based on your calculation: 16 filters * 8 height * 42 width
-        self.fc = nn.Linear(n_filters_2 * 8 * 42, 1)
+        self.fc = nn.LazyLinear(1) #nn.Linear(n_filters_2 * 8 * 42, 1)
 
     def forward(self, x):
         x = self.conv_block1(x)
@@ -41,4 +41,5 @@ class CNNModel(nn.Module):
 
 # Instantiate the model
 model = CNNModel()
+
 

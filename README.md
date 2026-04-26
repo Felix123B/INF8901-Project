@@ -1,12 +1,4 @@
 # El Niño Prediction
-
-**Course:** INF8901 — Polytechnique Montréal  
-**Supervisor:** Professor Guillaume-Alexandre Bilodeau  
-**Author:** Felix Blanchard  
-**Date:** April 2026
-
----
-
 ## Overview
 
 This project forecasts El Niño events by predicting the **ONI 3.4 index** (Oceanic Niño Index) at lead times ranging from 1 to 24 months. Rather than predicting the index directly, the approach reconstructs it from the **two leading principal components (PC1 and PC2)** of an EOF analysis on sea surface temperature (SST) anomalies — a linear combination of the two PCs recovers 96.7% of the ONI 3.4 variance.
